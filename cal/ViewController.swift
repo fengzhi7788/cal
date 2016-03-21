@@ -9,7 +9,12 @@
 import UIKit
 
 class ViewController: UIViewController {
+    @IBOutlet weak var x: UITextField!
+    @IBOutlet weak var y: UITextField!
+    @IBOutlet weak var z: UITextField!
 
+    @IBAction func add(sender: AnyObject) {
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
