@@ -51,6 +51,8 @@ class ViewController: UIViewController {
     @IBAction func AC(sender: UIButton) {
         xianshi.text="  "
     }
+    @IBAction func jian(sender: UIButton) {
+    }
     @IBAction func add(sender: AnyObject) {
         var a:Double=0
         var b:Double!=0
@@ -77,6 +79,9 @@ class ViewController: UIViewController {
         c=a+b
         z.text="\(c)"
 
+    }
+    @IBAction func dec(sender: UIButton) {
+        
     }
     override func viewDidLoad() {
         super.viewDidLoad()
