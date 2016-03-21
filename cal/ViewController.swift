@@ -12,6 +12,12 @@ class ViewController: UIViewController {
     @IBOutlet weak var x: UITextField!
     @IBOutlet weak var y: UITextField!
     @IBOutlet weak var z: UITextField!
+    @IBOutlet weak var xianshi: UITextField!
+    @IBAction func one(sender: AnyObject) {
+        xianshi.text="1"
+    
+        
+    }
 
     @IBAction func add(sender: AnyObject) {
         var a:Double=0
