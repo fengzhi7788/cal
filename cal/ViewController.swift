@@ -11,12 +11,14 @@ import UIKit
 class ViewController: UIViewController {
     func dianan(fig:String)
     {
-        
+        xianshihuancun += fig
+        xianshi.text = xianshihuancun
     }
     var jisuanqi = cal()
     func qiuzhi()
     {
     }
+    var xianshihuancun = ""
 
     @IBOutlet weak var x: UITextField!
     @IBOutlet weak var y: UITextField!
