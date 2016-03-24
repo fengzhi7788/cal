@@ -1,4 +1,4 @@
-//
+ //
 //  cal.swift
 //  cal
 //
@@ -47,6 +47,7 @@ struct cal {
         default:
             fanhui = "0 不能做被除数"
         }
+        return fanhui
     }
     
 }
