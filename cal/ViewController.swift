@@ -17,9 +17,30 @@ class ViewController: UIViewController {
     var jisuanqi = cal()
     func qiuzhi()
     {
+        var jieguo = ""
+        if !xianshihuancun.isEmpty
+        {
+            let linshi = xianshihuancun as NSString
+            huancun = linshi.doubleValue
+            xianshihuancun = ""
+        }
+        let linshi = huancun
+        if let qianyigeshuzi = huancun2
+        {
+            jieguo = jisuanqi.qiujieguo(caozuoshu: qianyigeshuzi, beicaozuoshu: linshi)
+            xianshi.text = jieguo
+            let lin = jieguo as NSString
+            huancun2 = lin.doubleValue
+        }
+        else
+        {
+            huancun2 = huancun
+            huancun = 0.0
+        }
     }
     var xianshihuancun = ""
-
+    var huancun = 0.0
+    var huancun2:Double?
     @IBOutlet weak var x: UITextField!
     @IBOutlet weak var y: UITextField!
     @IBOutlet weak var z: UITextField!
