@@ -145,7 +145,8 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="c"/>
                                 <connections>
-                                    <action selector="AC:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zJ0-t9-ERL"/>
+                                    <action selector="AC:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ceA-Mg-Mai"/>
+                                    <action selector="c:" destination="BYZ-38-t0r" eventType="touchUpInside" id="I5e-Yc-dV0"/>
                                 </connections>
                             </button>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="这是一个简单的计算器" borderStyle="bezel" textAlignment="right" minimumFontSize="15" id="Bb6-ly-hDV">

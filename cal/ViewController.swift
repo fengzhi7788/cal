@@ -55,42 +55,39 @@ class ViewController: UIViewController {
     
     @IBAction func two(sender: UIButton) {
         dianan("2")
-        xianshi.text="2"
+        //xianshi.text="2"
     }
     @IBAction func three(sender: UIButton) {
         dianan("3")
-        xianshi.text="3"
+        //xianshi.text="3"
     }
     @IBAction func four(sender: UIButton) {
         dianan("4")
-        xianshi.text="4"
+        //xianshi.text="4"
     }
     @IBAction func five(sender: UIButton) {
         dianan("5")
-        xianshi.text="5"
+        //xianshi.text="5"
     }
     @IBAction func six(sender: UIButton) {
         dianan("6")
-        xianshi.text="6"
+        //xianshi.text="6"
     }
     @IBAction func seven(sender: UIButton) {
         dianan("7")
-        xianshi.text="7"
+        //xianshi.text="7"
     }
     @IBAction func eight(sender: UIButton) {
         dianan("8")
-        xianshi.text="8"
+        //xianshi.text="8"
     }
     @IBAction func nine(sender: UIButton) {
         dianan("9")
-        xianshi.text="9"
+        //xianshi.text="9"
     }
     @IBAction func zero(sender: UIButton) {
         dianan("0")
-        xianshi.text="0"
-    }
-    @IBAction func AC(sender: UIButton) {
-        xianshi.text="  "
+        //xianshi.text="0"
     }
     @IBAction func jian(sender: UIButton) {
     }
@@ -110,6 +107,13 @@ class ViewController: UIViewController {
     @IBAction func chu(sender: UIButton) {
         jisuanqi.shezhidangqiansuanfa(.chu)
         qiuzhi()
+    }
+    @IBAction func c(sender: UIButton) {
+        xianshihuancun = ""
+        xianshi.text = "0"
+        huancun = 0
+        huancun2 = 0
+        jisuanqi.shezhidangqiansuanfa(.weixuanze)
     }
     override func viewDidLoad() {
         super.viewDidLoad()
