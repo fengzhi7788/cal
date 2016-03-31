@@ -109,27 +109,27 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="AqO-yJ-DyB">
-                                <rect key="frame" x="250" y="206" width="30" height="30"/>
+                                <rect key="frame" x="251" y="206" width="30" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="－"/>
                                 <connections>
-                                    <action selector="jian:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Rv7-GK-Iaj"/>
+                                    <action selector="dec:" destination="BYZ-38-t0r" eventType="touchUpInside" id="IxP-5Y-uVG"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="8Mn-m7-EMR">
-                                <rect key="frame" x="250" y="253" width="30" height="30"/>
+                                <rect key="frame" x="251" y="253" width="30" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="＊"/>
                                 <connections>
-                                    <action selector="cheng:" destination="BYZ-38-t0r" eventType="touchUpInside" id="BUO-CD-a23"/>
+                                    <action selector="mul:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zsF-W9-h39"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="d0b-Nh-9wu">
-                                <rect key="frame" x="250" y="297" width="30" height="30"/>
+                                <rect key="frame" x="251" y="303" width="30" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="／"/>
                                 <connections>
-                                    <action selector="chu:" destination="BYZ-38-t0r" eventType="touchUpInside" id="01M-ye-joJ"/>
+                                    <action selector="div:" destination="BYZ-38-t0r" eventType="touchUpInside" id="W0X-CG-Rsa"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="nHI-0H-Q3l">
@@ -145,7 +145,6 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="c"/>
                                 <connections>
-                                    <action selector="AC:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ceA-Mg-Mai"/>
                                     <action selector="c:" destination="BYZ-38-t0r" eventType="touchUpInside" id="I5e-Yc-dV0"/>
                                 </connections>
                             </button>
@@ -157,19 +156,19 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="lnd-vX-HqH">
-                                <rect key="frame" x="186" y="303" width="30" height="30"/>
+                                <rect key="frame" x="186" y="303" width="29" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="＝"/>
                                 <connections>
-                                    <action selector="dec:" destination="BYZ-38-t0r" eventType="touchUpInside" id="n9J-mO-4SF"/>
+                                    <action selector="equ:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2ap-of-ep4"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="uWY-Jd-Sp5">
-                                <rect key="frame" x="250" y="168" width="30" height="30"/>
+                                <rect key="frame" x="251" y="168" width="30" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="＋"/>
                                 <connections>
-                                    <action selector="add:" destination="BYZ-38-t0r" eventType="touchUpInside" id="AWg-ZA-NaJ"/>
+                                    <action selector="add:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ZEG-0D-oGs"/>
                                 </connections>
                             </button>
                         </subviews>

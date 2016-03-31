@@ -20,9 +20,9 @@ struct cal {
     enum suanfa
     {
         case add
-        case cal
-        case cheng
-        case chu
+        case sub
+        case mul
+        case div
         case pingfang
         case zhishumi
         case weixuanze
@@ -34,11 +34,11 @@ struct cal {
         {
         case .add:
             fanhui = "\( caozuozhu + beicaozuoshu )"
-        case .cal:
+        case .sub:
             fanhui = "\( caozuozhu - beicaozuoshu )"
-        case .cheng:
+        case .mul:
             fanhui = "\( caozuozhu * beicaozuoshu )"
-        case .chu where beicaozuoshu != 0:
+        case .div where beicaozuoshu != 0:
             fanhui = "\( caozuozhu / beicaozuoshu )"
         case .pingfang:
             fanhui = ""

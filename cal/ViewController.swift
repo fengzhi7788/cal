@@ -47,7 +47,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var xianshi: UITextField!
     
     @IBAction func one(sender: AnyObject) {
-        xianshi.text="1"
+        //xianshi.text="1"
         //xianshi.textColor = [UIColor, red]
         dianan("1")
         
@@ -89,23 +89,24 @@ class ViewController: UIViewController {
         dianan("0")
         //xianshi.text="0"
     }
-    @IBAction func jian(sender: UIButton) {
-    }
-    @IBAction func add(sender: AnyObject) {
+    @IBAction func add(sender: UIButton) {
         jisuanqi.shezhidangqiansuanfa(.add)
         qiuzhi()
-        
     }
+
     @IBAction func dec(sender: UIButton) {
-        jisuanqi.shezhidangqiansuanfa(.cal)
+        jisuanqi.shezhidangqiansuanfa(.sub)
         qiuzhi()
     }
-    @IBAction func cheng(sender: UIButton) {
-        jisuanqi.shezhidangqiansuanfa(.cheng)
+    @IBAction func mul(sender: UIButton) {
+        jisuanqi.shezhidangqiansuanfa(.mul)
         qiuzhi()
     }
-    @IBAction func chu(sender: UIButton) {
-        jisuanqi.shezhidangqiansuanfa(.chu)
+    @IBAction func div(sender: UIButton) {
+        jisuanqi.shezhidangqiansuanfa(.div)
+        qiuzhi()
+    }
+    @IBAction func equ(sender: UIButton) {
         qiuzhi()
     }
     @IBAction func c(sender: UIButton) {
