@@ -9,6 +9,10 @@
 import UIKit
 
 class ViewController: UIViewController {
+    var date = NSDate()
+    var timeFormatter = NSDateFormatter()
+    //timeFormatter.dateFormat = "yyy-MM-dd 'at' HH:mm:ss.SSS"
+    //var strNowTime = timeFormatter.stringFromDate(date) as String
     func dianan(fig:String)
     {
         xianshihuancun += fig
@@ -88,6 +92,10 @@ class ViewController: UIViewController {
     @IBAction func zero(sender: UIButton) {
         dianan("0")
         //xianshi.text="0"
+    }
+    @IBAction func point(sender: UIButton) {
+        
+        dianan(".")
     }
     @IBAction func add(sender: UIButton) {
         jisuanqi.shezhidangqiansuanfa(.add)
