@@ -13,41 +13,18 @@ class ViewController: UIViewController {
     var timeFormatter = NSDateFormatter()
     //timeFormatter.dateFormat = "yyy-MM-dd 'at' HH:mm:ss.SSS"
     //var strNowTime = timeFormatter.stringFromDate(date) as String
+    var dianjishu = 0
     func dianan(fig:String)
     {
-        xianshihuancun += fig
-        xianshi.text = xianshihuancun
+        xianshi.text! += fig
+        //xianshi.text = xianshihuancun
     }
-    var jisuanqi = cal()
-    func qiuzhi()
-    {
-        var jieguo = ""
-        if !xianshihuancun.isEmpty
-        {
-            let linshi = xianshihuancun as NSString
-            huancun = linshi.doubleValue
-            xianshihuancun = ""
-        }
-        let linshi = huancun
-        if let qianyigeshuzi = huancun2
-        {
-            jieguo = jisuanqi.qiujieguo(caozuoshu: qianyigeshuzi, beicaozuoshu: linshi)
-            xianshi.text = jieguo
-            let lin = jieguo as NSString
-            huancun2 = lin.doubleValue
-        }
-        else
-        {
-            huancun2 = huancun
-            huancun = 0.0
-        }
-    }
-    var xianshihuancun = ""
-    var huancun = 0.0
-    var huancun2:Double?
-    @IBOutlet weak var x: UITextField!
-    @IBOutlet weak var y: UITextField!
-    @IBOutlet weak var z: UITextField!
+
+
+    var fuhao = ""
+    var value1:Double=0
+    var value2:Double=0
+    var jieguo:Double=0
     @IBOutlet weak var xianshi: UITextField!
     
     @IBAction func one(sender: AnyObject) {
@@ -98,31 +75,51 @@ class ViewController: UIViewController {
         dianan(".")
     }
     @IBAction func add(sender: UIButton) {
-        jisuanqi.shezhidangqiansuanfa(.add)
-        qiuzhi()
+        fuhao="add"
+        value1=(xianshi.text! as NSString).doubleValue
+        xianshi.text=""
     }
 
     @IBAction func dec(sender: UIButton) {
-        jisuanqi.shezhidangqiansuanfa(.sub)
-        qiuzhi()
+        fuhao="jian"
+        value1=(xianshi.text! as NSString).doubleValue
+        xianshi.text=""
     }
     @IBAction func mul(sender: UIButton) {
-        jisuanqi.shezhidangqiansuanfa(.mul)
-        qiuzhi()
+        fuhao="cheng"
+        value1=(xianshi.text! as NSString).doubleValue
+        xianshi.text=""
     }
     @IBAction func div(sender: UIButton) {
-        jisuanqi.shezhidangqiansuanfa(.div)
-        qiuzhi()
+        fuhao="chu"
+        value1=(xianshi.text! as NSString).doubleValue
+        xianshi.text=""
     }
     @IBAction func equ(sender: UIButton) {
-        qiuzhi()
+        if(fuhao=="add"){
+            value2=(xianshi.text! as NSString).doubleValue
+            jieguo=value1+value2
+            xianshi.text="\(jieguo)"
+            
+        }
+        else if(fuhao=="jian"){
+            value2=(xianshi.text! as NSString).doubleValue
+            jieguo=value1-value2
+            xianshi.text="\(jieguo)"
+        }
+        else if(fuhao=="cheng"){
+            value2=(xianshi.text! as NSString).doubleValue
+            jieguo=value1*value2
+            xianshi.text="\(jieguo)"
+        }
+        else if(fuhao=="chu"){
+            value2=(xianshi.text! as NSString).doubleValue
+            jieguo=value1/value2
+            xianshi.text="\(jieguo)"
+        }
     }
     @IBAction func c(sender: UIButton) {
-        xianshihuancun = ""
-        xianshi.text = "0"
-        huancun = 0
-        huancun2 = 0
-        jisuanqi.shezhidangqiansuanfa(.weixuanze)
+        xianshi.text=""
     }
     override func viewDidLoad() {
         super.viewDidLoad()

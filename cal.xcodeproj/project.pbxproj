@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		BE4591351CA38CC4002756FF /* cal.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE4591341CA38CC4002756FF /* cal.swift */; };
 		BE5A4E2F1CA0195D00DA71C8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE5A4E2E1CA0195D00DA71C8 /* AppDelegate.swift */; };
 		BE5A4E311CA0195D00DA71C8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE5A4E301CA0195D00DA71C8 /* ViewController.swift */; };
 		BE5A4E341CA0195D00DA71C8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BE5A4E321CA0195D00DA71C8 /* Main.storyboard */; };
@@ -35,7 +34,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		BE4591341CA38CC4002756FF /* cal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = cal.swift; sourceTree = "<group>"; };
 		BE5A4E2B1CA0195D00DA71C8 /* cal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = cal.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE5A4E2E1CA0195D00DA71C8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BE5A4E301CA0195D00DA71C8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -105,7 +103,6 @@
 				BE5A4E351CA0195D00DA71C8 /* Assets.xcassets */,
 				BE5A4E371CA0195D00DA71C8 /* LaunchScreen.storyboard */,
 				BE5A4E3A1CA0195D00DA71C8 /* Info.plist */,
-				BE4591341CA38CC4002756FF /* cal.swift */,
 			);
 			path = cal;
 			sourceTree = "<group>";
@@ -260,7 +257,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				BE5A4E311CA0195D00DA71C8 /* ViewController.swift in Sources */,
-				BE4591351CA38CC4002756FF /* cal.swift in Sources */,
 				BE5A4E2F1CA0195D00DA71C8 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
