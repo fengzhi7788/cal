@@ -101,6 +101,24 @@ class ViewController: UIViewController {
         point=false
     }
 
+    @IBAction func hun(sender: UIButton) {
+        value1=(xianshi.text! as NSString).doubleValue
+        jieguo=0.01*value1
+        xianshi.text="\(jieguo)"
+    }
+    @IBAction func fuhao(sender: UIButton) {
+        value1=(xianshi.text! as NSString).doubleValue
+        jieguo=0-value1
+        xianshi.text="\(jieguo)"
+    }
+    @IBAction func pingfang(sender: UIButton) {
+        value1=(xianshi.text! as NSString).doubleValue
+        jieguo=value1*value1
+        xianshi.text="\(jieguo)"
+    }
+    @IBAction func pai(sender: UIButton) {
+        xianshi.text = xianshi.text!+"3.14"
+    }
     @IBAction func equ(sender: UIButton) {
         if(fuhao=="add"){
             value2=(xianshi.text! as NSString).doubleValue
