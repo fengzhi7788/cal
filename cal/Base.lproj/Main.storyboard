@@ -202,7 +202,6 @@
                                 </state>
                                 <connections>
                                     <action selector="hun:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3rm-Db-vi2"/>
-                                    <action selector="one:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Z2e-QE-uJx"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="AV8-tE-5s3" colorLabel="IBBuiltInLabel-Purple">
@@ -215,7 +214,6 @@
                                 </state>
                                 <connections>
                                     <action selector="fuhao:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lN0-SH-ThE"/>
-                                    <action selector="one:" destination="BYZ-38-t0r" eventType="touchUpInside" id="CaH-PG-gez"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="cSi-qL-Fki" colorLabel="IBBuiltInLabel-Purple">
@@ -227,8 +225,7 @@
                                     <color key="titleShadowColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
-                                    <action selector="one:" destination="BYZ-38-t0r" eventType="touchUpInside" id="nE9-UH-ZpA"/>
-                                    <action selector="pingfang:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Smi-SN-OfB"/>
+                                    <action selector="pingfang:" destination="BYZ-38-t0r" eventType="touchUpInside" id="AtL-HV-iah"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="K1c-g6-IEW" colorLabel="IBBuiltInLabel-Purple">
@@ -240,16 +237,13 @@
                                     <color key="titleShadowColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
-                                    <action selector="one:" destination="BYZ-38-t0r" eventType="touchUpInside" id="SbY-rb-KfZ"/>
                                     <action selector="pai:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ClO-Ce-G0q"/>
-                                    <action selector="pingfang:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Jay-Sf-hbj"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <connections>
-                        <outlet property="pingfang" destination="cSi-qL-Fki" id="qdx-YU-YNc"/>
                         <outlet property="xianshi" destination="Bb6-ly-hDV" id="5vx-Nu-dDK"/>
                     </connections>
                 </viewController>

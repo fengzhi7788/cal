@@ -10,19 +10,20 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    func dianan(fig:String)
-    {
-        
-        xianshi.text! += fig
-    }
+    
 
     var point=false
+    var x=0.0
     var fuhao = ""
     var value1:Double=0
     var value2:Double=0
     var jieguo:Double=0
     @IBOutlet weak var xianshi: UITextField!
     
+    func dianan(fig:String)
+    {
+        xianshi.text! += fig
+    }
     @IBAction func one(sender: AnyObject) {
        
         dianan("1")
@@ -62,8 +63,13 @@ class ViewController: UIViewController {
    
     }
     @IBAction func zero(sender: UIButton) {
-        dianan("0")
-    
+        if xianshi.text=="0"
+        {
+            xianshi.text="0"
+        }else
+        {
+            dianan("0")
+        }
     }
     @IBAction func point(sender: UIButton) {
         if xianshi.text==""
@@ -83,19 +89,19 @@ class ViewController: UIViewController {
     }
 
     @IBAction func dec(sender: UIButton) {
-        fuhao="jian"
+        fuhao="dec"
         value1=(xianshi.text! as NSString).doubleValue
         xianshi.text=""
         point=false
     }
     @IBAction func mul(sender: UIButton) {
-        fuhao="cheng"
+        fuhao="mul"
         value1=(xianshi.text! as NSString).doubleValue
         xianshi.text=""
         point=false
     }
     @IBAction func div(sender: UIButton) {
-        fuhao="chu"
+        fuhao="div"
         value1=(xianshi.text! as NSString).doubleValue
         xianshi.text=""
         point=false
@@ -111,6 +117,7 @@ class ViewController: UIViewController {
         jieguo=0-value1
         xianshi.text="\(jieguo)"
     }
+   
     @IBAction func pingfang(sender: UIButton) {
         value1=(xianshi.text! as NSString).doubleValue
         jieguo=value1*value1
@@ -126,25 +133,32 @@ class ViewController: UIViewController {
             xianshi.text="\(jieguo)"
             
         }
-        else if(fuhao=="jian"){
+        else if(fuhao=="dec"){
             value2=(xianshi.text! as NSString).doubleValue
             jieguo=value1-value2
             xianshi.text="\(jieguo)"
         }
-        else if(fuhao=="cheng"){
+        else if(fuhao=="mul"){
             value2=(xianshi.text! as NSString).doubleValue
             jieguo=value1*value2
             xianshi.text="\(jieguo)"
         }
-        else if(fuhao=="chu"){
+        else if(fuhao=="div"){
             value2=(xianshi.text! as NSString).doubleValue
-            jieguo=value1/value2
-            xianshi.text="\(jieguo)"
+            if xianshi.text=="0"
+            {
+                xianshi.text="除数不能为0"
+            }else{
+                jieguo=value1/value2
+                xianshi.text="\(jieguo)"
+            }
         }
     }
     @IBAction func c(sender: UIButton) {
         xianshi.text=""
     }
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
