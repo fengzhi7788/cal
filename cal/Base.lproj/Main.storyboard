@@ -125,16 +125,6 @@
                                     <action selector="mul:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zsF-W9-h39"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="d0b-Nh-9wu">
-                                <rect key="frame" x="190" y="273" width="60" height="47"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                                <color key="backgroundColor" red="0.43529411759999997" green="0.4431372549" blue="0.47450980390000003" alpha="1" colorSpace="calibratedRGB"/>
-                                <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <state key="normal" title="／"/>
-                                <connections>
-                                    <action selector="div:" destination="BYZ-38-t0r" eventType="touchUpInside" id="W0X-CG-Rsa"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="nHI-0H-Q3l">
                                 <rect key="frame" x="10" y="273" width="112" height="47"/>
                                 <autoresizingMask key="autoresizingMask"/>
@@ -238,6 +228,16 @@
                                 </state>
                                 <connections>
                                     <action selector="pai:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ClO-Ce-G0q"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="d0b-Nh-9wu">
+                                <rect key="frame" x="190" y="273" width="60" height="47"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <color key="backgroundColor" red="0.43529411759999997" green="0.4431372549" blue="0.47450980390000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="／"/>
+                                <connections>
+                                    <action selector="div:" destination="BYZ-38-t0r" eventType="touchUpInside" id="W0X-CG-Rsa"/>
                                 </connections>
                             </button>
                         </subviews>
